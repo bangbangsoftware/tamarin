@@ -47,3 +47,7 @@ Will be asked a few quick questions every morning or time they log in: "Is blar 
 **Dogfood**
 
 This project should be developed using itself. Also should be data driven: First design data in and out. Then write the tests, in parallel with the UI design. One page at a time from start to finish. 
+
+**Tech**
+
+Angular2, material design and Go backend (?) with mongo db (?)
