@@ -12,7 +12,7 @@ The tool needs to users to **introduce themselves** and their roles:
 * Sales
 * Trainer
 
-Mainly Tamarin will be there to answer questions for all the people involved. Tararin will be about
+Mainly tamarin will be there to answer questions for all the people involved. tamarin will be about
 breaking down abstracts of abstracts of abstracts (etc) with acceptance criteria be inherited and 
 time estimates being split and changing it parent estimate, which will all be logged over time. 
 
@@ -42,4 +42,8 @@ security audit (technial debt if not done now)
 
 **Devs**
 
-Will be asked a few quick questions every morning: "Is blar complete?", "How much is left (%)?", "Declare a blocker?", 
+Will be asked a few quick questions every morning or time they log in: "Is blar complete?", "How much is left (%)?", "Declare a blocker?". They should log on before they are about to start work and keep logged in as they work, this will be used to time tasks.
+
+**Dogfood**
+
+This project should be developed using itself. Also should be data driven: First design data in and out. Then write the tests, in parallel with the UI design. One page at a time from start to finish. 
