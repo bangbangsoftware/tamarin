@@ -50,4 +50,4 @@ This project should be developed using itself. Also should be data driven: First
 
 **Tech**
 
-Angular2, material design and Go backend (?) with mongo db (?)
+Angular2, material design and Go backend (?) with mongo or postgres db (?)
