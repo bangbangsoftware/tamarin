@@ -51,3 +51,7 @@ This project should be developed using itself. Also should be data driven: First
 **Tech**
 
 Angular2, material design and Go backend (?) with mongo or postgres db (?)
+
+**Features**
+
+Using git log, could track where bugs appear, could cost a project based on stake holder value and time of project. Code coverage warnings, code review warnings, benchmark warnings, security and linting warnings.
