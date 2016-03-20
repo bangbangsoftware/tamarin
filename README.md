@@ -32,13 +32,13 @@ The Stakeholder/ product owner who's really responsible for **return on investme
 
 **Key terms**
 
-Project = Epic, features, stories, technical debt story, technicla infrastructure, definition of done
+Project = Epic, features, stories, technical debt story, technical infrastructure, definition of done
 
 **Task completed or is it....**
 
 But has it been code reviewed, (the reviewer telling the author how it works), tested, deployed, documented (for all audiences), 
-reviewed by the product owner (put on their work list), load tested? (technial debt if not done now), 
-security audit (technial debt if not done now)
+reviewed by the product owner (put on their work list), load tested? (technical debt if not done now), 
+security audit (technical debt if not done now)
 
 **Devs**
 
@@ -50,7 +50,7 @@ This project should be developed using itself. Also should be data driven: First
 
 **Tech**
 
-Angular2, material design and Go backend (?) with mongo or postgres db (?)
+Angular2, material design and Go backend (?) with mongo couch or postgres db (?)
 
 **Features**
 
