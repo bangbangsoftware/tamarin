@@ -55,3 +55,6 @@ Angular2, material design and Go backend (?) with mongo couch or postgres db (?)
 **Features**
 
 Using git log, could track where bugs appear, could cost a project based on stake holder value and time of project. Code coverage warnings, code review warnings, benchmark warnings, security and linting warnings.
+
+**Architecture**
+Can rsjx subscribe to an rss feed, perhaps the architecture should be sub/pub model for all state that is being displayed. As githubs gives out atom feeds like: https://github.com/hss-dev/ngQuill/commits/master.atom

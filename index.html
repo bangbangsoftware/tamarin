@@ -2,22 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Mick Carter's example code..</title>
-    <script src="dist/tam.js"></script>
+    <meta charset="UTF-8" />
+    <title>Tamarin</title>
+    <link rel="stylesheet" href="./node_modules/angular-material/angular-material.min.css"
+    />
+    <link rel="stylesheet" href="./css/taz.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <script src="dist/tamarin.js"></script>
+    <base href="/"></base>
 </head>
 
-<body ng-app="tam" layout="column">
-        <md-tool-bar>
-                <h1>Agile Tamarin</h1>
-        </md-tool-bar>
+<body ng-app="tamarin" layout="column">
+    <md-tool-bar class="toolbar">
+        <div layout="row" flex>
+            <menu-but layout-align="start" flex></menu-but>
+            <h1 layout-align="center" flex>Agile Tamarin</h1>
+        </div>
+    </md-tool-bar>
 
-        <div class="container" layout="row" flex>
-                <md-sidenav md-is-locked-open="true" class="lightblue">Side Nav</md-sidenav>
-                <md-content id="content" class="lightgreen" flex>Content</md-content>
-        </div>        
-
-
+    <div class="container" layout="row" flex>
+        <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-4dp sidemenu"
+        md-component-id="left">
+            <left-nav></left-nav>
+        </md-sidenav>
+        <md-content id="content" class="lightgreen" flex>
+            <app></app>
+        </md-content>
+    </div>
 </body>
 
 </html>

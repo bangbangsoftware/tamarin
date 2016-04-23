@@ -1,0 +1,53 @@
+<div layout="column" ng-cloak>
+    <md-content layout-padding>
+        <form name="storyForm" >
+            <md-input-container class="md-block">
+                <label>Name</label>
+                <input required md-maxlength="30" required md-no-asterisk name="name" ng-model="story.name">
+                <div ng-messages="storyForm.name.$error">
+                    <div ng-message="required">This is required.</div>
+                    <div ng-message="md-maxlength">The name has to be less than 30 characters long.</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Description</label>
+                <input required name="description" ng-model="story.description">
+                <div ng-messages="storyForm.description.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
+            </md-input-container>
+            <!--
+      <md-input-container class="md-block">
+        <label>Client Email</label>
+        <input required type="email" name="clientEmail" ng-model="story.clientEmail"
+               minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+        <div ng-messages="storyForm.clientEmail.$error" role="alert">
+          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+            Your email must be between 10 and 100 characters long and look like an e-mail address.
+          </div>
+        </div>
+      </md-input-container>
+      -->
+            <md-input-container class="md-block">
+                <label>Story Points</label>
+                <input type="number" step="any" name="points" ng-model="story.points" min="0"
+                                                                                      max="100" /> <!-- ng-pattern="666" -->
+                <div ng-messages="storyForm.points.$error" multiple md-auto-hide="false">
+                    <div ng-message="min">
+                        You can't have negative story points??!
+                    </div>
+                    <div ng-message="pattern">
+                        Evil
+                    </div>
+                    <div ng-message="max">
+                        {{storyForm.points.$viewValue}} is way too much, do you need a spike?
+                    </div>
+                </div>
+            </md-input-container>
+            <section layout="row" layout-sm="column" layout-align="space-around center" >
+                <md-button ng-click="alert('Playhouse 90')" class="md-raised">Cancel</md-button>
+                <md-button ng-click="save()" class="md-raised">Done</md-button>
+            </section>
+        </form>
+    </md-content>
+</div>

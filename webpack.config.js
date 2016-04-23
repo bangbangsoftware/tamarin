@@ -1,5 +1,6 @@
 'use strict';
 var webpack = require('webpack');
+var path = require("path");
 
 module.exports = function makeWebpackConfig() {
 
@@ -12,13 +13,16 @@ module.exports = function makeWebpackConfig() {
         loaders: [{
             test: /\.js$/,
             loader: 'babel-loader',
-            exclude: /node_modules/,
+            exclude: [/node_modules/, /bower_components/],
             query: {
                 presets: ['es2015']
             }
         }, {
+            test: /\.css$/,
+            loader: 'style-loader!css-loader!sass-loader'
+        }, {
             test: /\.scss$/,
-            loader: 'style!css!sass'
+            loader: "style-loader!css-loader"
         }]
     };
 
@@ -28,6 +32,13 @@ module.exports = function makeWebpackConfig() {
         path: __dirname + '/dist',
         filename: 'tamarin.js'
     };
+
+//    config.resolve = {
+//        root: [path.join(__dirname, "bower_components")]
+//    };
+//    config.plugins = [new webpack.ResolverPlugin(
+//        new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
+//    )];
 
     return config;
 }();
