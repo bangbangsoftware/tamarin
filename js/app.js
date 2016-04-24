@@ -25,7 +25,7 @@ app.value('$routerRootComponent', 'app');
 app.component('app', {
     template: '<ng-outlet></ng-outlet>',
     $routeConfig: [{
-        path: 'story/...',
+        path: 'story',
         name: 'Story',
         component: 'story',
         useAsDefault: true
