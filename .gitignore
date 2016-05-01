@@ -1,3 +1,4 @@
+js/firebaseConfig.js
 dist
 *.swp
 node_modules

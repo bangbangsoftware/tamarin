@@ -1,6 +1,6 @@
 var leftNavMod = angular.module('leftNav', [])
     .component('leftNav', {
-        templateUrl: 'navLeft.html',
+        templateUrl: './html/navLeft.html',
         controller: LeftNavComponent
     });
 

@@ -28,6 +28,10 @@
         </div>
       </md-input-container>
       -->
+             <div ng-repeat="s in $ctrl.stories">
+                       {{$ctrl.display(s)}}
+             </div>
+
             <md-input-container class="md-block">
                 <label>Story Points</label>
                 <input type="number" step="any" name="points" ng-model="points" min="0"

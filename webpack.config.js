@@ -19,10 +19,14 @@ module.exports = function makeWebpackConfig() {
             }
         }, {
             test: /\.css$/,
-            loader: 'style-loader!css-loader!sass-loader'
+            //loader: 'style-loader!css-loader!sass-loader'
+            loader: 'style-loader!css-loader'
         }, {
             test: /\.scss$/,
             loader: "style-loader!css-loader"
+        }, {
+	    test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+            loader : 'file-loader'
         }]
     };
 
